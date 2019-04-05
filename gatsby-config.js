@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `KaizoMario`,
+    description: `KaizoMario Website based on Gatsby project.`,
+    author: `@gatsbyjs, @cchungmin`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,6 +28,36 @@ module.exports = {
         // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-firebase`,
+      options: {
+        // point to the firebase private key downloaded
+        credential: require('./firebase-key.json'),
+        // your firebase database root url
+        databaseURL: 'https://popping-heat-9561.firebaseio.com',
+        types: [
+          {
+            type: 'socialLinkData',
+            path: 'v1/data/socialLinks',
+            query: ref => ref.limitToLast(10),
+            map: node => {
+              console.log('node', node.key)
+              return { socialLink: node }
+            }
+          },
+          {
+            type: 'skillData',
+            path: 'v1/data/skills',
+            query: ref => ref.limitToLast(10),
+            map: node => {
+              console.log('node', node)
+              return { skill: node }
+            }
+          },
+        ],
+      }
+    },
+    `gatsby-plugin-netlify-cms`
     // this (optional) plugin enables Progressive Web App
     // Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
