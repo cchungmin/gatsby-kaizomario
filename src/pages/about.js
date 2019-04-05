@@ -21,7 +21,7 @@ const AboutPage = () => (
         <h3>Work Experience</h3>
         <h4>Front-End Engineer at Cimpress</h4>
         <p>Tokyo, Japan. 2016.03 -</p>
-        <h4>Contract Web Developer at Google</h4>
+        <h4>Contract Web Developer at Robert Walters for Google</h4>
         <p>Tokyo, Japan. 2014.03 - 2016.02</p>
         <h4>Software Engineer at Softbank Mobile</h4>
         <p>Tokyo, Japan. 2013.07 - 2014.02</p>
