@@ -1,20 +1,22 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const AboutPage = () => (
   <Layout>
-    <SEO
-      title="About"
-      keywords={[`gatsby`, `application`, `react`]}
-    />
+    <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     <div class="jumbo">
       <div class="about-block right tomster">
         <h2>About Chung-Min</h2>
         <p>
-          I love to create beautiful Web experience with latest technologies. I hope any user can have pleasant feelings while surfing on the internet, no matter what devices they use and no matter where they are. I always try the best to make every work to reach Web and company standard because I believe great works should not just look great to the users, but also its code should look great to the developers.
+          I love to create beautiful Web experience with latest technologies. I
+          hope any user can have pleasant feelings while surfing on the
+          internet, no matter what devices they use and no matter where they
+          are. I always try the best to make every work to reach Web and company
+          standard because I believe great works should not just look great to
+          the users, but also its code should look great to the developers.
         </p>
       </div>
       <div class="about-block work-experience">
@@ -33,12 +35,15 @@ const AboutPage = () => (
       <div class="about-block education">
         <h3>Education Background</h3>
         <h4>University of Glasgow</h4>
-        <p>M.Sc in Information Technology, School of Computing Science, Scotland, UK</p>
+        <p>
+          M.Sc in Information Technology, School of Computing Science, Scotland,
+          UK
+        </p>
         <h4>Fu-Jen Catholic University</h4>
         <p>B.BA in Information Management, College of Management, Taiwan</p>
       </div>
     </div>
   </Layout>
-)
+);
 
-export default AboutPage
+export default AboutPage;

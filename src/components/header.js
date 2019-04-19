@@ -1,6 +1,6 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 const Header = ({ siteTitle }) => (
   <div class="menu">
@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => (
                 href="https://www.facebook.com/chungmin.cheng.9"
                 rel="noopener noreferrer"
               >
-                <i class="icon-facebook-sign"></i>
+                <i class="icon-facebook-sign" />
               </a>
             </li>
             <li>
@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
                 href="http://github.com/cchungmin"
                 rel="noopener noreferrer"
               >
-                <i class="icon-github-sign"></i>
+                <i class="icon-github-sign" />
               </a>
             </li>
             <li>
@@ -46,7 +46,7 @@ const Header = ({ siteTitle }) => (
                 href="http://plus.google.com/101928195101978330342"
                 rel="noopener noreferrer"
               >
-                <i class="icon-google-plus-sign"></i>
+                <i class="icon-google-plus-sign" />
               </a>
             </li>
             <li>
@@ -56,7 +56,7 @@ const Header = ({ siteTitle }) => (
                 href="https://jp.linkedin.com/in/chungmincheng"
                 rel="noopener noreferrer"
               >
-                <i class="icon-linkedin-sign"></i>
+                <i class="icon-linkedin-sign" />
               </a>
             </li>
             <li>
@@ -66,7 +66,7 @@ const Header = ({ siteTitle }) => (
                 href="https://twitter.com/ChungMinCheng"
                 rel="noopener noreferrer"
               >
-                <i class="icon-twitter-sign"></i>
+                <i class="icon-twitter-sign" />
               </a>
             </li>
           </ul>
@@ -74,14 +74,14 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
   </div>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;
