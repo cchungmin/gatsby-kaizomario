@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  justify-content: center;
 }
 body {
   margin: 0;
@@ -624,7 +625,7 @@ pre tt:after {
 html,
 body {
   color: #073642;
-  font-family: 'Noto Sans', 'Roboto', 'Helvetica', sans-serif;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -632,16 +633,32 @@ body {
   font-smooth: auto;
   min-height: 100%;
   line-height: 1.4;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 body {
-  background-color: #fdf6e3;
   position: relative;
-  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
   font-weight: 300;
   box-sizing: border-box;
   min-height: 100%;
-  overflow-y: scroll;
+  background-color: #6677dd;
+  background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 35px,
+      rgba(255, 255, 255, 0.2) 35px,
+      rgba(255, 255, 255, 0.2) 70px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 35px,
+      rgba(255, 255, 255, 0.4) 35px,
+      rgba(255, 255, 255, 0.4) 70px
+    );
+  background-attachment: fixed;
 }
 
 h1,
@@ -689,24 +706,25 @@ li {
   display: inline;
 }
 
-section {
-  padding: 45px 0;
-}
-
 main {
   max-width: 864px;
   padding-top: 0;
   min-height: initial;
+  background-color: #f0f0f0;
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 4px;
+  box-shadow: rgba(88, 110, 117, 0.8) 0px 0px 4px;
 }
 
 .left.links,
 .container {
-  max-width: 750px;
   margin: 0 auto;
 }
 
 .left.links {
-  padding: 5px;
+  padding: 0.2em;
+  margin-left: 0.5em;
 }
 
 .container {
@@ -714,13 +732,13 @@ main {
 }
 
 .menu {
-  background-color: #eee8d5;
+  background-color: #f0f0f0;
   box-shadow: 1px 2px 4px #586e75;
 }
 
 .nav-link {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   display: inline-block;
   padding: 10px;
 }
@@ -755,12 +773,10 @@ main {
 }
 
 .section-inner {
-  padding: 50px 0;
   vertical-align: middle;
 }
 
 .masthead {
-  font-family: 'Quicksand', sans-serif;
   line-height: 1.2;
   text-align: center;
 }
@@ -917,6 +933,19 @@ body.loaded .kaizo-mario-image-container {
   padding: 30px 0;
 }
 
+.skills {
+  display: flex;
+}
+
+.skills li {
+  margin-right: 0.5em;
+  background-color: #6677dd;
+  color: #fff;
+  display: flex;
+  padding: 0.3em;
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 767px) {
   .kaizo-mario-name {
     font-size: 40px;
@@ -928,7 +957,7 @@ body.loaded .kaizo-mario-image-container {
 }
 
 .project-block {
-  padding: 10px 0;
+  padding: 1em 0;
 }
 
 @media screen and (max-width: 480px) {
