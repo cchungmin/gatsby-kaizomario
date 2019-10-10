@@ -21,8 +21,10 @@ const AboutPage = () => (
       </div>
       <div class="about-block work-experience">
         <h3>Work Experience</h3>
+        <h4>Sr. Front-End Developer at Global Fintech Company</h4>
+        <p>Tokyo, Japan. 2018.03 -</p>
         <h4>Front-End Engineer at Cimpress</h4>
-        <p>Tokyo, Japan. 2016.03 -</p>
+        <p>Tokyo, Japan. 2016.03 - 2018.02</p>
         <h4>Contract Web Developer at Robert Walters for Google</h4>
         <p>Tokyo, Japan. 2014.03 - 2016.02</p>
         <h4>Software Engineer at Softbank Mobile</h4>
