@@ -727,10 +727,6 @@ main {
   margin-left: 0.5em;
 }
 
-.container {
-  padding: 30px 20px;
-}
-
 .menu {
   background-color: #f0f0f0;
   box-shadow: 1px 2px 4px #586e75;
@@ -791,7 +787,7 @@ main {
 }
 
 .kaizo-mario-container {
-  margin: 60px;
+  margin: 4em;
 }
 
 .kaizo-mario-image-container {
@@ -801,7 +797,7 @@ main {
 }
 
 .kaizo-mario-name {
-  font-size: 60px;
+  font-size: 48px;
 }
 
 .kaizo-mario-image {
@@ -935,6 +931,7 @@ body.loaded .kaizo-mario-image-container {
 
 .skills {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .skills li {
@@ -961,6 +958,10 @@ body.loaded .kaizo-mario-image-container {
 }
 
 @media screen and (max-width: 480px) {
+  .kaizo-mario-container {
+    margin: 2em;
+  }
+
   .sticky-social a {
     font-size: 24px;
   }
