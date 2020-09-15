@@ -12,17 +12,6 @@ const SKILLS = {
   html5: 'html5',
 };
 
-const PROJECTS = [
-  {
-    name: 'Google Ignite Malaysia',
-    link: 'https://www.google.com/intl/en_my/landing/ignite/index.html',
-    skills: ['javascript', 'angularjs', 'sass', 'djangoTemplates', 'html5'],
-    role: 'Primary developer',
-    detail:
-      'Helps Google promote AdWords certificate to students and push partnerships with enterprises.',
-  },
-];
-
 const WorkPage = () => (
   <Layout>
     <SEO title="Work" keywords={[`gatsby`, `application`, `react`]} />
